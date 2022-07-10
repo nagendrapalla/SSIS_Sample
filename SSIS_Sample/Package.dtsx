@@ -1,0 +1,1521 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="7/10/2022 12:54:10 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="PALLA"
+  DTS:CreatorName="PALLA\nagen"
+  DTS:DTSID="{24BA4F54-A432-42AF-8CDD-278B31F36C43}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.521.0"
+  DTS:LocaleID="16393"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{96716081-A2EB-40BF-B4E1-DCDC2E4C1771}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Bank Balance Error Text File]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{C185937A-4650-40E7-9EF3-AE228C6B8236}"
+      DTS:ObjectName="Bank Balance Error Text File">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="16393"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\nagen\OneDrive\Documents\BankBalanceErrorRecords.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ID"
+              DTS:DTSID="{91717FCA-7B6C-47D1-A25A-7A793E8546F8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FIRST NAME"
+              DTS:DTSID="{994F5178-2906-4136-878D-5A9ECD2DAFD8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LAST NAME"
+              DTS:DTSID="{F84DC19F-10DF-4B2E-94C4-B77C57B59D8A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EMAIL"
+              DTS:DTSID="{B225E660-91E8-4289-BE73-CE9084B9438A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MOBILE"
+              DTS:DTSID="{A87E4467-A63A-4432-9608-A4D5413C3AB5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="6"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Bank Balance"
+              DTS:DTSID="{7A79EFC7-945F-4FF7-ACE4-F3B77611B30F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="101"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FULL_NAME"
+              DTS:DTSID="{1EDC3B37-1BD5-4C66-9FCB-5D9563DCA37F}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Bank Balance Type Conversion Error]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{420F0F27-1E79-441A-AC39-C0C88985730D}"
+      DTS:ObjectName="Bank Balance Type Conversion Error">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="16393"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\nagen\OneDrive\Documents\BankBalanceTypeConversionError.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ID"
+              DTS:DTSID="{3B4DEF6D-6B9B-411C-A7B5-F8F9419B9C80}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FIRST NAME"
+              DTS:DTSID="{A94AB862-9FF3-49D8-ACDC-18FE489A0034}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LAST NAME"
+              DTS:DTSID="{C6553D54-836C-49D8-845C-ACB9ED848302}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EMAIL"
+              DTS:DTSID="{F15AD18C-76B5-4754-9DE8-5A58C81CACA8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MOBILE"
+              DTS:DTSID="{BE5C1867-E34B-4A25-AEFA-EBD7CD551BD1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Bank Balance"
+              DTS:DTSID="{BE7619FA-B2C7-4C73-82A4-EF70229E5E24}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="101"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FULL_NAME"
+              DTS:DTSID="{A6EC8CC7-8BF4-462E-8BE5-49AE36587559}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{A8FA2163-0AEF-4B28-88B6-534421919FE4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{FD3202EF-202C-42B5-B4B6-2B75B40D01C3}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{9925063F-2010-47A4-B177-CE3E7A08C276}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="16393"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\nagen\OneDrive\Documents\SampleSource.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ID"
+              DTS:DTSID="{4301F6FF-B187-4476-B06F-C2A6A6682985}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FIRST NAME"
+              DTS:DTSID="{5EBBFB82-AACD-431E-9FFE-59CF575D3AD6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LAST NAME"
+              DTS:DTSID="{34AA4536-9370-4DC5-8447-08105A21C94E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EMAIL"
+              DTS:DTSID="{30379275-47DA-4395-81E9-2A73A4E1F24D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MOBILE"
+              DTS:DTSID="{191DBAF0-DF3B-48FD-93A9-B7CBB8A29155}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Bank Balance"
+              DTS:DTSID="{31C2B07C-05C3-4F1D-A2B9-240B4B999ACD}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[PALLA.PALLA_FAMILY]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{6C3E3592-3FE9-4241-88FC-8795C2DE17E1}"
+      DTS:ObjectName="PALLA.PALLA_FAMILY">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=PALLA;Initial Catalog=PALLA_FAMILY;Integrated Security=True;Application Name=SSIS-Package-{6C3E3592-3FE9-4241-88FC-8795C2DE17E1}PALLA.PALLA_FAMILY;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{D78F5261-9FF8-4872-BF48-B8DC1A231701}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Variable">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Foreach Loop Container"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Foreach Loop Container"
+      DTS:DTSID="{CC0B643C-4BE8-4A06-A191-E5A3176036C5}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Foreach Loop Container">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Foreach Loop Container\LOAD CSV"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{6AA039C3-F50E-4DD6-BFBA-B9FBF3A9C7B9}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="LOAD CSV"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Foreach Loop Container\LOAD CSV\ADO NET Destination"
+                  componentClassID="Microsoft.ManagedComponentHost"
+                  contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+                  description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
+                  name="ADO NET Destination"
+                  usesDispositions="true"
+                  version="2">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="The Destination database table name."
+                      expressionType="Notify"
+                      name="TableOrViewName"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."MEMBERS"</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
+                      expressionType="Notify"
+                      name="BatchSize">0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out. A value of 0 indicates infinite time-out. "
+                      expressionType="Notify"
+                      name="CommandTimeout">30</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether to use the SqlBulkCopy interface to improve the performance of bulk insert operations. Only certain providers support this interface."
+                      expressionType="Notify"
+                      name="UseBulkInsertWhenPossible">true</property>
+                    <property
+                      dataType="System.String"
+                      name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Foreach Loop Container\LOAD CSV\ADO NET Destination.Connections[IDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[PALLA.PALLA_FAMILY]"
+                      connectionManagerRefId="Package.ConnectionManagers[PALLA.PALLA_FAMILY]"
+                      description="Managed connection manager"
+                      name="IDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Foreach Loop Container\LOAD CSV\ADO NET Destination.Inputs[ADO NET Destination Input]"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="ADO NET Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[ID]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="ID"
+                          externalMetadataColumnId="Package\Foreach Loop Container\LOAD CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ID]"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].Columns[ID]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[EMAIL]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="EMAIL"
+                          externalMetadataColumnId="Package\Foreach Loop Container\LOAD CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[EMAIL]"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].Columns[EMAIL]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[MOBILE]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="MOBILE"
+                          externalMetadataColumnId="Package\Foreach Loop Container\LOAD CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[MOBILE]"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].Columns[MOBILE]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[FULL_NAME]"
+                          cachedDataType="wstr"
+                          cachedLength="101"
+                          cachedName="FULL_NAME"
+                          externalMetadataColumnId="Package\Foreach Loop Container\LOAD CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[FULL_NAME]"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Combine First Name &amp; Last Name.Outputs[Derived Column Output].Columns[FULL_NAME]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Bank Balance]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Bank Balance"
+                          externalMetadataColumnId="Package\Foreach Loop Container\LOAD CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[BANK_BALANCE]"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].Columns[Bank Balance]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ID]"
+                          dataType="wstr"
+                          length="50"
+                          name="ID" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[FULL_NAME]"
+                          dataType="wstr"
+                          length="2147483647"
+                          name="FULL_NAME" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[EMAIL]"
+                          dataType="wstr"
+                          length="50"
+                          name="EMAIL" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[MOBILE]"
+                          dataType="wstr"
+                          length="50"
+                          name="MOBILE" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[BANK_BALANCE]"
+                          dataType="numeric"
+                          name="BANK_BALANCE"
+                          precision="19"
+                          scale="255" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Foreach Loop Container\LOAD CSV\ADO NET Destination.Outputs[ADO NET Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="ADO NET Destination Error Output"
+                      synchronousInputId="Package\Foreach Loop Container\LOAD CSV\ADO NET Destination.Inputs[ADO NET Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion"
+                  componentClassID="Microsoft.DataConvert"
+                  contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Data Conversion"
+                  name="Bank Balance Type Conversion"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion.Inputs[Data Conversion Input]"
+                      name="Data Conversion Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion.Inputs[Data Conversion Input].Columns[Bank Balance]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Bank Balance"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].Columns[Bank Balance]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion.Outputs[Data Conversion Output]"
+                      exclusionGroup="1"
+                      name="Data Conversion Output"
+                      synchronousInputId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion.Inputs[Data Conversion Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion.Outputs[Data Conversion Output].Columns[Bank Balance]"
+                          dataType="cy"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="RedirectRow"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion.Outputs[Data Conversion Output].Columns[Bank Balance]"
+                          name="Bank Balance"
+                          truncationRowDisposition="RedirectRow">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].Columns[Bank Balance]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion.Outputs[Data Conversion Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Data Conversion Error Output"
+                      synchronousInputId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion.Inputs[Data Conversion Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion Failure"
+                  componentClassID="Microsoft.FlatFileDestination"
+                  contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Destination"
+                  localeId="16393"
+                  name="Bank Balance Type Conversion Failure"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether the data will overwrite or append to the destination file."
+                      name="Overwrite">true</property>
+                    <property
+                      dataType="System.Null"
+                      description="Specifies the text to write to the destination file before any data is written."
+                      expressionType="Notify"
+                      name="Header" />
+                    <property
+                      dataType="System.Boolean"
+                      description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                      name="EscapeQualifier">false</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion Failure.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Bank Balance Type Conversion Error]"
+                      connectionManagerRefId="Package.ConnectionManagers[Bank Balance Type Conversion Error]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion Failure.Inputs[Flat File Destination Input]"
+                      hasSideEffects="true"
+                      name="Flat File Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion Failure.Inputs[Flat File Destination Input].Columns[ID]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="ID"
+                          externalMetadataColumnId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion Failure.Inputs[Flat File Destination Input].ExternalColumns[ID]"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].Columns[ID]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion Failure.Inputs[Flat File Destination Input].Columns[FIRST NAME]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="FIRST NAME"
+                          externalMetadataColumnId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion Failure.Inputs[Flat File Destination Input].ExternalColumns[FIRST NAME]"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].Columns[FIRST NAME]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion Failure.Inputs[Flat File Destination Input].Columns[LAST NAME]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="LAST NAME"
+                          externalMetadataColumnId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion Failure.Inputs[Flat File Destination Input].ExternalColumns[LAST NAME]"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].Columns[LAST NAME]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion Failure.Inputs[Flat File Destination Input].Columns[EMAIL]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="EMAIL"
+                          externalMetadataColumnId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion Failure.Inputs[Flat File Destination Input].ExternalColumns[EMAIL]"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].Columns[EMAIL]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion Failure.Inputs[Flat File Destination Input].Columns[MOBILE]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="MOBILE"
+                          externalMetadataColumnId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion Failure.Inputs[Flat File Destination Input].ExternalColumns[MOBILE]"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].Columns[MOBILE]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion Failure.Inputs[Flat File Destination Input].Columns[Bank Balance]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Bank Balance"
+                          externalMetadataColumnId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion Failure.Inputs[Flat File Destination Input].ExternalColumns[Bank Balance]"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].Columns[Bank Balance]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion Failure.Inputs[Flat File Destination Input].Columns[FULL_NAME]"
+                          cachedDataType="wstr"
+                          cachedLength="101"
+                          cachedName="FULL_NAME"
+                          externalMetadataColumnId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion Failure.Inputs[Flat File Destination Input].ExternalColumns[FULL_NAME]"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Combine First Name &amp; Last Name.Outputs[Derived Column Output].Columns[FULL_NAME]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion Failure.Inputs[Flat File Destination Input].Columns[ErrorCode]"
+                          cachedDataType="i4"
+                          cachedName="ErrorCode"
+                          externalMetadataColumnId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion Failure.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion Failure.Inputs[Flat File Destination Input].Columns[ErrorColumn]"
+                          cachedDataType="i4"
+                          cachedName="ErrorColumn"
+                          externalMetadataColumnId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion Failure.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion Failure.Inputs[Flat File Destination Input].ExternalColumns[ID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ID" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion Failure.Inputs[Flat File Destination Input].ExternalColumns[FIRST NAME]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="FIRST NAME" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion Failure.Inputs[Flat File Destination Input].ExternalColumns[LAST NAME]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="LAST NAME" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion Failure.Inputs[Flat File Destination Input].ExternalColumns[EMAIL]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="EMAIL" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion Failure.Inputs[Flat File Destination Input].ExternalColumns[MOBILE]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="MOBILE" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion Failure.Inputs[Flat File Destination Input].ExternalColumns[Bank Balance]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Bank Balance" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion Failure.Inputs[Flat File Destination Input].ExternalColumns[FULL_NAME]"
+                          dataType="wstr"
+                          length="101"
+                          name="FULL_NAME" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion Failure.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                          dataType="i4"
+                          name="ErrorCode" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion Failure.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                          dataType="i4"
+                          name="ErrorColumn" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                </component>
+                <component
+                  refId="Package\Foreach Loop Container\LOAD CSV\CheckBankBalanceError"
+                  componentClassID="Microsoft.ConditionalSplit"
+                  contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+                  name="CheckBankBalanceError"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Foreach Loop Container\LOAD CSV\CheckBankBalanceError.Inputs[Conditional Split Input]"
+                      description="Input to the Conditional Split Transformation"
+                      name="Conditional Split Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\CheckBankBalanceError.Inputs[Conditional Split Input].Columns[Bank Balance]"
+                          cachedDataType="cy"
+                          cachedName="Bank Balance"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion.Outputs[Data Conversion Output].Columns[Bank Balance]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Foreach Loop Container\LOAD CSV\CheckBankBalanceError.Outputs[Bank Balance Error]"
+                      description="Output 1 of the Conditional Split Transformation"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      exclusionGroup="1"
+                      name="Bank Balance Error"
+                      synchronousInputId="Package\Foreach Loop Container\LOAD CSV\CheckBankBalanceError.Inputs[Conditional Split Input]"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                          name="Expression">#{Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion.Outputs[Data Conversion Output].Columns[Bank Balance]} &lt;= 0</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the friendly version of the expression. This expression version uses column names."
+                          expressionType="Notify"
+                          name="FriendlyExpression">[Bank Balance Type Conversion].[Bank Balance] &lt;= 0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                          name="EvaluationOrder">0</property>
+                      </properties>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Foreach Loop Container\LOAD CSV\CheckBankBalanceError.Outputs[Conditional Split Default Output]"
+                      description="Default Output of the Conditional Split Transformation"
+                      exclusionGroup="1"
+                      name="Conditional Split Default Output"
+                      synchronousInputId="Package\Foreach Loop Container\LOAD CSV\CheckBankBalanceError.Inputs[Conditional Split Input]">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          name="IsDefaultOut">true</property>
+                      </properties>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Foreach Loop Container\LOAD CSV\CheckBankBalanceError.Outputs[Conditional Split Error Output]"
+                      description="Error Output of the Conditional Split Transformation"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Conditional Split Error Output"
+                      synchronousInputId="Package\Foreach Loop Container\LOAD CSV\CheckBankBalanceError.Inputs[Conditional Split Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\CheckBankBalanceError.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\CheckBankBalanceError.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\CheckBankBalanceError.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\CheckBankBalanceError.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Foreach Loop Container\LOAD CSV\Combine First Name &amp; Last Name"
+                  componentClassID="Microsoft.DerivedColumn"
+                  contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+                  name="Combine First Name &amp; Last Name"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Foreach Loop Container\LOAD CSV\Combine First Name &amp; Last Name.Inputs[Derived Column Input]"
+                      description="Input to the Derived Column Transformation"
+                      name="Derived Column Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Combine First Name &amp; Last Name.Inputs[Derived Column Input].Columns[FIRST NAME]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="FIRST NAME"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].Columns[FIRST NAME]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Combine First Name &amp; Last Name.Inputs[Derived Column Input].Columns[LAST NAME]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="LAST NAME"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].Columns[LAST NAME]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Foreach Loop Container\LOAD CSV\Combine First Name &amp; Last Name.Outputs[Derived Column Output]"
+                      description="Default Output of the Derived Column Transformation"
+                      exclusionGroup="1"
+                      name="Derived Column Output"
+                      synchronousInputId="Package\Foreach Loop Container\LOAD CSV\Combine First Name &amp; Last Name.Inputs[Derived Column Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Combine First Name &amp; Last Name.Outputs[Derived Column Output].Columns[FULL_NAME]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          length="101"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Combine First Name &amp; Last Name.Outputs[Derived Column Output].Columns[FULL_NAME]"
+                          name="FULL_NAME"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">#{Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].Columns[FIRST NAME]} + " " + #{Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].Columns[LAST NAME]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">[FIRST NAME] + " " + [LAST NAME]</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Foreach Loop Container\LOAD CSV\Combine First Name &amp; Last Name.Outputs[Derived Column Error Output]"
+                      description="Error Output of the Derived Column Transformation"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Derived Column Error Output"
+                      synchronousInputId="Package\Foreach Loop Container\LOAD CSV\Combine First Name &amp; Last Name.Inputs[Derived Column Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Combine First Name &amp; Last Name.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Combine First Name &amp; Last Name.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Combine First Name &amp; Last Name.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Combine First Name &amp; Last Name.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Foreach Loop Container\LOAD CSV\Read From CSV"
+                  componentClassID="Microsoft.FlatFileSource"
+                  contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Source"
+                  localeId="16393"
+                  name="Read From CSV"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether zero-length columns are treated as null."
+                      name="RetainNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                      name="FileNameColumnName"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                      connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output]"
+                      name="Flat File Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].Columns[ID]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].ExternalColumns[ID]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].Columns[ID]"
+                          name="ID"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].Columns[FIRST NAME]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].ExternalColumns[FIRST NAME]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].Columns[FIRST NAME]"
+                          name="FIRST NAME"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].Columns[LAST NAME]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].ExternalColumns[LAST NAME]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].Columns[LAST NAME]"
+                          name="LAST NAME"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].Columns[EMAIL]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].ExternalColumns[EMAIL]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].Columns[EMAIL]"
+                          name="EMAIL"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].Columns[MOBILE]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].ExternalColumns[MOBILE]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].Columns[MOBILE]"
+                          name="MOBILE"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].Columns[Bank Balance]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].ExternalColumns[Bank Balance]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].Columns[Bank Balance]"
+                          name="Bank Balance"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].ExternalColumns[ID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ID" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].ExternalColumns[FIRST NAME]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="FIRST NAME" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].ExternalColumns[LAST NAME]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="LAST NAME" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].ExternalColumns[EMAIL]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="EMAIL" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].ExternalColumns[MOBILE]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="MOBILE" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].ExternalColumns[Bank Balance]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Bank Balance" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Error Output]"
+                      isErrorOut="true"
+                      name="Flat File Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          codePage="1252"
+                          dataType="text"
+                          description="Flat File Source Error Output Column"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          name="Flat File Source Error Output Column" />
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Foreach Loop Container\LOAD CSV\Zero Bank Balance Records"
+                  componentClassID="Microsoft.FlatFileDestination"
+                  contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Destination"
+                  localeId="16393"
+                  name="Zero Bank Balance Records"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether the data will overwrite or append to the destination file."
+                      name="Overwrite">true</property>
+                    <property
+                      dataType="System.Null"
+                      description="Specifies the text to write to the destination file before any data is written."
+                      expressionType="Notify"
+                      name="Header" />
+                    <property
+                      dataType="System.Boolean"
+                      description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                      name="EscapeQualifier">false</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Foreach Loop Container\LOAD CSV\Zero Bank Balance Records.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Bank Balance Error Text File]"
+                      connectionManagerRefId="Package.ConnectionManagers[Bank Balance Error Text File]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Foreach Loop Container\LOAD CSV\Zero Bank Balance Records.Inputs[Flat File Destination Input]"
+                      hasSideEffects="true"
+                      name="Flat File Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Zero Bank Balance Records.Inputs[Flat File Destination Input].Columns[ID]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="ID"
+                          externalMetadataColumnId="Package\Foreach Loop Container\LOAD CSV\Zero Bank Balance Records.Inputs[Flat File Destination Input].ExternalColumns[ID]"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].Columns[ID]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Zero Bank Balance Records.Inputs[Flat File Destination Input].Columns[FIRST NAME]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="FIRST NAME"
+                          externalMetadataColumnId="Package\Foreach Loop Container\LOAD CSV\Zero Bank Balance Records.Inputs[Flat File Destination Input].ExternalColumns[FIRST NAME]"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].Columns[FIRST NAME]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Zero Bank Balance Records.Inputs[Flat File Destination Input].Columns[LAST NAME]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="LAST NAME"
+                          externalMetadataColumnId="Package\Foreach Loop Container\LOAD CSV\Zero Bank Balance Records.Inputs[Flat File Destination Input].ExternalColumns[LAST NAME]"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].Columns[LAST NAME]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Zero Bank Balance Records.Inputs[Flat File Destination Input].Columns[EMAIL]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="EMAIL"
+                          externalMetadataColumnId="Package\Foreach Loop Container\LOAD CSV\Zero Bank Balance Records.Inputs[Flat File Destination Input].ExternalColumns[EMAIL]"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].Columns[EMAIL]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Zero Bank Balance Records.Inputs[Flat File Destination Input].Columns[MOBILE]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="MOBILE"
+                          externalMetadataColumnId="Package\Foreach Loop Container\LOAD CSV\Zero Bank Balance Records.Inputs[Flat File Destination Input].ExternalColumns[MOBILE]"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].Columns[MOBILE]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Zero Bank Balance Records.Inputs[Flat File Destination Input].Columns[Bank Balance]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Bank Balance"
+                          externalMetadataColumnId="Package\Foreach Loop Container\LOAD CSV\Zero Bank Balance Records.Inputs[Flat File Destination Input].ExternalColumns[Bank Balance]"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output].Columns[Bank Balance]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Zero Bank Balance Records.Inputs[Flat File Destination Input].Columns[FULL_NAME]"
+                          cachedDataType="wstr"
+                          cachedLength="101"
+                          cachedName="FULL_NAME"
+                          externalMetadataColumnId="Package\Foreach Loop Container\LOAD CSV\Zero Bank Balance Records.Inputs[Flat File Destination Input].ExternalColumns[FULL_NAME]"
+                          lineageId="Package\Foreach Loop Container\LOAD CSV\Combine First Name &amp; Last Name.Outputs[Derived Column Output].Columns[FULL_NAME]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Zero Bank Balance Records.Inputs[Flat File Destination Input].ExternalColumns[ID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ID" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Zero Bank Balance Records.Inputs[Flat File Destination Input].ExternalColumns[FIRST NAME]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="FIRST NAME" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Zero Bank Balance Records.Inputs[Flat File Destination Input].ExternalColumns[LAST NAME]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="LAST NAME" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Zero Bank Balance Records.Inputs[Flat File Destination Input].ExternalColumns[EMAIL]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="EMAIL" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Zero Bank Balance Records.Inputs[Flat File Destination Input].ExternalColumns[MOBILE]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="MOBILE" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Zero Bank Balance Records.Inputs[Flat File Destination Input].ExternalColumns[Bank Balance]"
+                          dataType="cy"
+                          name="Bank Balance" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\LOAD CSV\Zero Bank Balance Records.Inputs[Flat File Destination Input].ExternalColumns[FULL_NAME]"
+                          dataType="wstr"
+                          length="101"
+                          name="FULL_NAME" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Foreach Loop Container\LOAD CSV.Paths[Bank Balance Error]"
+                  endId="Package\Foreach Loop Container\LOAD CSV\Zero Bank Balance Records.Inputs[Flat File Destination Input]"
+                  name="Bank Balance Error"
+                  startId="Package\Foreach Loop Container\LOAD CSV\CheckBankBalanceError.Outputs[Bank Balance Error]" />
+                <path
+                  refId="Package\Foreach Loop Container\LOAD CSV.Paths[Conditional Split Default Output]"
+                  endId="Package\Foreach Loop Container\LOAD CSV\ADO NET Destination.Inputs[ADO NET Destination Input]"
+                  name="Conditional Split Default Output"
+                  startId="Package\Foreach Loop Container\LOAD CSV\CheckBankBalanceError.Outputs[Conditional Split Default Output]" />
+                <path
+                  refId="Package\Foreach Loop Container\LOAD CSV.Paths[Data Conversion Error Output]"
+                  endId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion Failure.Inputs[Flat File Destination Input]"
+                  name="Data Conversion Error Output"
+                  startId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion.Outputs[Data Conversion Error Output]" />
+                <path
+                  refId="Package\Foreach Loop Container\LOAD CSV.Paths[Data Conversion Output]"
+                  endId="Package\Foreach Loop Container\LOAD CSV\CheckBankBalanceError.Inputs[Conditional Split Input]"
+                  name="Data Conversion Output"
+                  startId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion.Outputs[Data Conversion Output]" />
+                <path
+                  refId="Package\Foreach Loop Container\LOAD CSV.Paths[Derived Column Output]"
+                  endId="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion.Inputs[Data Conversion Input]"
+                  name="Derived Column Output"
+                  startId="Package\Foreach Loop Container\LOAD CSV\Combine First Name &amp; Last Name.Outputs[Derived Column Output]" />
+                <path
+                  refId="Package\Foreach Loop Container\LOAD CSV.Paths[Flat File Source Output]"
+                  endId="Package\Foreach Loop Container\LOAD CSV\Combine First Name &amp; Last Name.Inputs[Derived Column Input]"
+                  name="Flat File Source Output"
+                  startId="Package\Foreach Loop Container\LOAD CSV\Read From CSV.Outputs[Flat File Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="128,42"
+          Id="Package\Foreach Loop Container\LOAD CSV"
+          TopLeft="34,8" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="207,75"
+          Size="207,118"
+          Id="Package\Foreach Loop Container"
+          TopLeft="196,70.8181818181818" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Foreach Loop Container\LOAD CSV">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="258,42"
+          Id="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion Failure"
+          TopLeft="717,216" />
+        <NodeLayout
+          Size="152,42"
+          Id="Package\Foreach Loop Container\LOAD CSV\Read From CSV"
+          TopLeft="329,37" />
+        <NodeLayout
+          Size="207,42"
+          Id="Package\Foreach Loop Container\LOAD CSV\Zero Bank Balance Records"
+          TopLeft="475,405" />
+        <NodeLayout
+          Size="223,42"
+          Id="Package\Foreach Loop Container\LOAD CSV\Bank Balance Type Conversion"
+          TopLeft="296,209" />
+        <NodeLayout
+          Size="190,42"
+          Id="Package\Foreach Loop Container\LOAD CSV\CheckBankBalanceError"
+          TopLeft="317,292" />
+        <NodeLayout
+          Size="179,42"
+          Id="Package\Foreach Loop Container\LOAD CSV\ADO NET Destination"
+          TopLeft="170,403" />
+        <NodeLayout
+          Size="238,42"
+          Id="Package\Foreach Loop Container\LOAD CSV\Combine First Name &amp; Last Name"
+          TopLeft="288,123" />
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\LOAD CSV.Paths[Data Conversion Error Output]"
+          TopLeft="519,233.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="198,0"
+              Start="0,0"
+              End="190.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="190.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="29.16361328125,5,132.1727734375,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\LOAD CSV.Paths[Conditional Split Default Output]"
+          TopLeft="381.666666666667,334">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-122.166666666667,69"
+              Start="0,0"
+              End="-122.166666666667,61.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.9457202505219" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.9457202505219"
+                    Point2="0,27.9457202505219"
+                    Point3="-4,27.9457202505219" />
+                  <mssgle:LineSegment
+                    End="-118.166666666667,27.9457202505219" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-118.166666666667,27.9457202505219"
+                    Point2="-122.166666666667,27.9457202505219"
+                    Point3="-122.166666666667,31.9457202505219" />
+                  <mssgle:LineSegment
+                    End="-122.166666666667,61.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-131.697239583333,32.9457202505219,141.2278125,11.658203125"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\LOAD CSV.Paths[Bank Balance Error]"
+          TopLeft="442.333333333333,334">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="136.166666666667,71"
+              Start="0,0"
+              End="136.166666666667,63.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.7557411273486" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.7557411273486"
+                    Point2="0,28.7557411273486"
+                    Point3="4,28.7557411273486" />
+                  <mssgle:LineSegment
+                    End="132.166666666667,28.7557411273486" />
+                  <mssgle:CubicBezierSegment
+                    Point1="132.166666666667,28.7557411273486"
+                    Point2="136.166666666667,28.7557411273486"
+                    Point3="136.166666666667,32.7557411273486" />
+                  <mssgle:LineSegment
+                    End="136.166666666667,63.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="25.5096419270833,33.7557411273486,85.1473828125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\LOAD CSV.Paths[Flat File Source Output]"
+          TopLeft="406,79">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,44"
+              Start="0,0"
+              End="0,36.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,36.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\LOAD CSV.Paths[Derived Column Output]"
+          TopLeft="407.25,165">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,44"
+              Start="0,0"
+              End="0,36.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,36.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\LOAD CSV.Paths[Data Conversion Output]"
+          TopLeft="409.75,251">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,41"
+              Start="0,0"
+              End="0,33.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Foreach Loop Container\LOAD CSV\ADO NET Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
