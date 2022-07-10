@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">PALLA</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAna9bLZ6+OEe+PVvNvhJzOQAAAAACAAAAAAAQZgAAAAEAACAAAADgB9OJKrtELQ362vvD9bcgrCaEgwKT8nxvdhNJH0fl0AAAAAAOgAAAAAIAACAAAAAx4CmQYA1I9eEPtN2uTpFO2Y/Wit7QRADOQsfPlQZHaJAAAADOIz0Uy+nSH7UoVVdTqsx317jxYTHwha3GlZZtP9/mLfwSLaZ/TpxxZsHIg172bB2GWGl9E2WEOuTABZPj1OCu9/nLnep1H8cPa3hGxYY0r7JYj8pBlfgRHJxrM8SvulCyghLP0m2Jso4WmyxCAfAxxIkuqRol79ngWGUhw6Mx27z4uE3UjWlRpkJwswYlR9VAAAAAYMXwGI3FZykJER7gHc/u0ATAOdcx44c4EXQmDrfdzKxD/3jLp83OkCqPemd26fWtduGxUa7jwPXPjqI0cNkGXA==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAna9bLZ6+OEe+PVvNvhJzOQAAAAACAAAAAAAQZgAAAAEAACAAAACLcY57tENI7VzyajHkIwvQKsrt571dGPfKS4EhpdvFBwAAAAAOgAAAAAIAACAAAAApm5XzfXI1KBXd0A+aMddUnfKK8Az2wwC1mghH5zvEvZAAAAAsq/Gybx68Dl4Gza8iNTwfyCJKettFu+yOHNYu3RlQ84budw8J7dmfUh0r7l5O2cUoEqqgdbAyttmV8N9T/CB4MsLvMgXra3l8M/JDzrP4yhYPWGlXWX0ZIohf077lDQzVs95wa8Qy1UihstAVTuUqcP3vvZh7SFmx8FUW68ys0Yc8pNrvMGrPPZ2I2v3mALtAAAAAAHzWCFAzGawFl/d0qEMtobFwGQoZwoT83zr6jSILdHhmvrJh7BPgfrDkqmXTqPv4vT0Iy04CtVlyF1+oD+mOoA==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -42,16 +42,30 @@
                 <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">6</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">18</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{8D190FF1-E41F-452E-816E-F8BB0EA4DD91}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{0DE28CB9-58E9-4BE6-A53F-9F452EC4017D}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
                 <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
               </SSIS:Properties>
               <SSIS:Parameters>
+                <SSIS:Parameter SSIS:Name="SourceFilesPath">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">{BBFF537D-4447-459A-B927-FB6F90E97D23}</SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">D:\SSIS_FILES\Source</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="CM.Bank Balance Error Text File.AlwaysCheckForRowDelimiters">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
@@ -123,7 +137,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\nagen\OneDrive\Documents\BankBalanceErrorRecords.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">D:\SSIS_FILES\Destination\BankBalanceErrorRecords.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -214,6 +228,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -318,7 +334,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\nagen\OneDrive\Documents\BankBalanceTypeConversionError.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">D:\SSIS_FILES\Destination\BankBalanceTypeConversionError.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -409,6 +425,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -502,21 +520,6 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Flat File Connection Manager.ConnectionString">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\nagen\OneDrive\Documents\SampleSource.csv</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="CM.Flat File Connection Manager.DataRowsToSkip">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
@@ -604,6 +607,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>

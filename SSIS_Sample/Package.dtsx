@@ -11,8 +11,8 @@
   DTS:LocaleID="16393"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="8"
-  DTS:VersionGUID="{96716081-A2EB-40BF-B4E1-DCDC2E4C1771}">
+  DTS:VersionBuild="18"
+  DTS:VersionGUID="{0DE28CB9-58E9-4BE6-A53F-9F452EC4017D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\nagen\OneDrive\Documents\BankBalanceErrorRecords.csv">
+          DTS:ConnectionString="D:\SSIS_FILES\Destination\BankBalanceErrorRecords.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -38,7 +38,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ID"
-              DTS:DTSID="{91717FCA-7B6C-47D1-A25A-7A793E8546F8}"
+              DTS:DTSID="{B375EE16-96C7-416F-8431-313DDAFED800}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -47,7 +47,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="FIRST NAME"
-              DTS:DTSID="{994F5178-2906-4136-878D-5A9ECD2DAFD8}"
+              DTS:DTSID="{F5CC8521-27B4-4B7E-9EE1-4601012657DD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -56,7 +56,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="LAST NAME"
-              DTS:DTSID="{F84DC19F-10DF-4B2E-94C4-B77C57B59D8A}"
+              DTS:DTSID="{06846BCD-E55A-4979-B459-E5631666279C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -65,7 +65,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="EMAIL"
-              DTS:DTSID="{B225E660-91E8-4289-BE73-CE9084B9438A}"
+              DTS:DTSID="{CCCDC432-770D-433E-8B73-75F27F76AD4D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -74,7 +74,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="MOBILE"
-              DTS:DTSID="{A87E4467-A63A-4432-9608-A4D5413C3AB5}"
+              DTS:DTSID="{B893859E-2F13-4EF5-9687-0CB58CDA02AE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -82,7 +82,7 @@
               DTS:DataType="6"
               DTS:TextQualified="True"
               DTS:ObjectName="Bank Balance"
-              DTS:DTSID="{7A79EFC7-945F-4FF7-ACE4-F3B77611B30F}"
+              DTS:DTSID="{7B81DFAE-86D3-4126-B5DC-57E67248B7DB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -91,7 +91,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FULL_NAME"
-              DTS:DTSID="{1EDC3B37-1BD5-4C66-9FCB-5D9563DCA37F}"
+              DTS:DTSID="{B0200AD0-FF8C-4C80-B56D-7B0E6177E1F8}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -110,7 +110,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\nagen\OneDrive\Documents\BankBalanceTypeConversionError.csv">
+          DTS:ConnectionString="D:\SSIS_FILES\Destination\BankBalanceTypeConversionError.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -119,7 +119,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ID"
-              DTS:DTSID="{3B4DEF6D-6B9B-411C-A7B5-F8F9419B9C80}"
+              DTS:DTSID="{9ED61CE5-438C-4CF4-9C9E-024EADD1CED9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -128,7 +128,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="FIRST NAME"
-              DTS:DTSID="{A94AB862-9FF3-49D8-ACDC-18FE489A0034}"
+              DTS:DTSID="{83CAE430-EF1E-4894-A0F3-40D391049D48}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -137,7 +137,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="LAST NAME"
-              DTS:DTSID="{C6553D54-836C-49D8-845C-ACB9ED848302}"
+              DTS:DTSID="{B5BF96EE-B0E5-4DE9-BA78-057C18F33623}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -146,7 +146,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="EMAIL"
-              DTS:DTSID="{F15AD18C-76B5-4754-9DE8-5A58C81CACA8}"
+              DTS:DTSID="{EF98952D-DA6B-48DF-8F7D-F51B642034FC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -155,7 +155,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="MOBILE"
-              DTS:DTSID="{BE5C1867-E34B-4A25-AEFA-EBD7CD551BD1}"
+              DTS:DTSID="{6B416460-DBAC-4E1E-B82E-254CAF22DC52}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -164,7 +164,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Bank Balance"
-              DTS:DTSID="{BE7619FA-B2C7-4C73-82A4-EF70229E5E24}"
+              DTS:DTSID="{35FD1298-A049-41C1-9503-9329AFDC3B51}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -173,7 +173,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FULL_NAME"
-              DTS:DTSID="{A6EC8CC7-8BF4-462E-8BE5-49AE36587559}"
+              DTS:DTSID="{D17E996D-D96C-4170-B964-57A5B15945F5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -181,7 +181,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{A8FA2163-0AEF-4B28-88B6-534421919FE4}"
+              DTS:DTSID="{A62EB59C-AEB0-4635-9100-94B4518DF2D8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -189,7 +189,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{FD3202EF-202C-42B5-B4B6-2B75B40D01C3}"
+              DTS:DTSID="{1913D600-AA7E-4054-9AE9-54F0DE650E35}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -200,6 +200,8 @@
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{9925063F-2010-47A4-B177-CE3E7A08C276}"
       DTS:ObjectName="Flat File Connection Manager">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::FilePath]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
@@ -208,8 +210,7 @@
           DTS:ColumnNamesInFirstDataRow="True"
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\nagen\OneDrive\Documents\SampleSource.csv">
+          DTS:CodePage="1252">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -218,7 +219,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ID"
-              DTS:DTSID="{4301F6FF-B187-4476-B06F-C2A6A6682985}"
+              DTS:DTSID="{FE917302-901A-4120-9D3C-109F7D97ED1B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -227,7 +228,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="FIRST NAME"
-              DTS:DTSID="{5EBBFB82-AACD-431E-9FFE-59CF575D3AD6}"
+              DTS:DTSID="{E75F7950-5FD9-4496-B26D-E966E0BB417B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -236,7 +237,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="LAST NAME"
-              DTS:DTSID="{34AA4536-9370-4DC5-8447-08105A21C94E}"
+              DTS:DTSID="{2D62647C-C10B-470F-A39F-EB8A5148C973}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -245,7 +246,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="EMAIL"
-              DTS:DTSID="{30379275-47DA-4395-81E9-2A73A4E1F24D}"
+              DTS:DTSID="{1DF05782-B065-47F1-81E4-546E3D038A7E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -254,7 +255,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="MOBILE"
-              DTS:DTSID="{191DBAF0-DF3B-48FD-93A9-B7CBB8A29155}"
+              DTS:DTSID="{71FD9588-1E1E-47A8-B1BD-78C9EA905D28}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -263,7 +264,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Bank Balance"
-              DTS:DTSID="{31C2B07C-05C3-4F1D-A2B9-240B4B999ACD}"
+              DTS:DTSID="{82949312-AB0A-4749-BF72-93D47C94FB8C}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -280,15 +281,27 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
+  <DTS:PackageParameters>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{BBFF537D-4447-459A-B927-FB6F90E97D23}"
+      DTS:ObjectName="SourceFilesPath">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">D:\SSIS_FILES\Source</DTS:Property>
+    </DTS:PackageParameter>
+  </DTS:PackageParameters>
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{D78F5261-9FF8-4872-BF48-B8DC1A231701}"
-      DTS:IncludeInDebugDump="6789"
+      DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
-      DTS:ObjectName="Variable">
+      DTS:ObjectName="FilePath">
       <DTS:VariableValue
-        DTS:DataType="3">0</DTS:VariableValue>
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -296,10 +309,29 @@
       DTS:refId="Package\Foreach Loop Container"
       DTS:CreationName="STOCK:FOREACHLOOP"
       DTS:Description="Foreach Loop Container"
-      DTS:DTSID="{CC0B643C-4BE8-4A06-A191-E5A3176036C5}"
+      DTS:DTSID="{93D73CE9-3C64-467E-A0EB-5FA1FF5A575A}"
       DTS:ExecutableType="STOCK:FOREACHLOOP"
       DTS:LocaleID="-1"
       DTS:ObjectName="Foreach Loop Container">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachFileEnumerator"
+        DTS:DTSID="{CD45171A-E23F-4614-8E85-35A4CBDFC3E0}"
+        DTS:ObjectName="{CD45171A-E23F-4614-8E85-35A4CBDFC3E0}">
+        <DTS:PropertyExpression
+          DTS:Name="Directory">@[$Package::SourceFilesPath]</DTS:PropertyExpression>
+        <DTS:ObjectData>
+          <ForEachFileEnumeratorProperties>
+            <FEFEProperty
+              Folder="D:\SSIS_FILES\Source" />
+            <FEFEProperty
+              FileSpec="*.csv" />
+            <FEFEProperty
+              FileNameRetrievalType="0" />
+            <FEFEProperty
+              Recurse="0" />
+          </ForEachFileEnumeratorProperties>
+        </DTS:ObjectData>
+      </DTS:ForEachEnumerator>
       <DTS:Variables />
       <DTS:Executables>
         <DTS:Executable
@@ -1283,6 +1315,14 @@
           </DTS:ObjectData>
         </DTS:Executable>
       </DTS:Executables>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{0637032F-F5BE-4116-8890-6939E94C6AF5}"
+          DTS:ObjectName="{0637032F-F5BE-4116-8890-6939E94C6AF5}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::FilePath" />
+      </DTS:ForEachVariableMappings>
     </DTS:Executable>
   </DTS:Executables>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
@@ -1300,14 +1340,14 @@
         <NodeLayout
           Size="128,42"
           Id="Package\Foreach Loop Container\LOAD CSV"
-          TopLeft="34,8" />
+          TopLeft="36.2727272727274,5.99999999999994" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="207,75"
-          Size="207,118"
+          PanelSize="205,103"
+          Size="205,146"
           Id="Package\Foreach Loop Container"
-          TopLeft="196,70.8181818181818" />
+          TopLeft="500.909090909091,112.727272727273" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
